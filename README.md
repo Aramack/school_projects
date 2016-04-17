@@ -1,2 +1,2 @@
 # school_projects
-Miscellaneous Projects From My Time As A Student
+Miscellaneous projects from my time as a student at the University of Maryland.
