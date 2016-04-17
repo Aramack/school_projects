@@ -1,0 +1,23 @@
+;;
+;; node number must be non-negative
+;;
+node 0 emesis
+node 1 emesis
+node 2 heaving
+node 3 nauseated
+(
+establish node 0 port 10300 node 1 port 10305 cost 10 name link01
+establish node 0 port 10301 node 2 port 10306 cost 11 name link02
+establish node 0 port 10302 node 3 port 10307 cost 12 name link03
+establish node 1 port 10303 node 2 port 10308 cost 13 name link12
+establish node 1 port 10304 node 3 port 10309 cost 14 name link13
+)
+;
+(
+tear-down link02
+tear-down link03
+)
+(
+update link12 cost 999
+update link13 cost 777
+)
